@@ -1,0 +1,106 @@
+.reviews
+    padding-bottom: 100px
+    @media (max-width: 767px)
+        padding-bottom: 70px
+    &-block
+        position: relative
+        padding: 10px 40px 60px 40px
+        background: rgba(41, 120, 160, 0.55)
+        @media (max-width: 340px)
+            padding: 10px 30px 60px 30px
+        @media (max-width: 767px)
+            width: 320px
+            padding-bottom: 20px
+        @media (max-width: 380px)
+            width: 290px
+        &__title
+            font-family: 'Lobster', cursive
+            font-size: 50px
+            line-height: 55px
+            letter-spacing: 0.07em
+            text-indent: 1px
+            color: white
+            text-align: center
+            margin-top: 20px
+            margin-bottom: 60px
+            @media (max-width: 767px)
+                font-size: 35px
+                line-height: 40px
+        &__swiper
+            &-slide
+                &__img img
+                    width: 400px
+                    height: 400px
+                    margin-right: 35px
+                    @media (max-width: 991px)
+                        margin-right: 0
+                    @media (max-width: 767px)
+                        width: 250px
+                        height: 240px
+                &__name
+                    font-family: 'Roboto', sans-serif
+                    font-weight: 700
+                    font-style: italic
+                    font-size: 40px
+                    line-height: 55px
+                    letter-spacing: 0.07em
+                    text-indent: 1px
+                    color: white
+                    margin-bottom: 30px
+                    @media (max-width: 991px)
+                        text-align: center
+                        margin: 20px 0
+                    @media (max-width: 767px)
+                        font-size: 25px
+                        line-height: 26px
+                &__review
+                    text-align: justify
+                    max-width: 500px
+                    font-family: 'Roboto', sans-serif
+                    font-weight: 400
+                    font-size: 22px
+                    line-height: 30px
+                    letter-spacing: 0.07em
+                    text-indent: 1px
+                    color: rgba(255, 255, 255, 0.85)
+                    @media (max-width: 767px)
+                        font-size: 16px
+                        line-height: 18px
+                        text-align: center
+        &__arrows
+            &-prev
+                border: none
+                background-color: transparent
+                position: absolute
+                top: 50%
+                left: -35px
+                transform: translateY(-50%)
+                @media (max-width: 400px)
+                    left: -32px
+                @media (max-width: 340px)
+                    left: -22px
+                @media (min-width: 1199px)
+                    transition: 0.3s
+                &:focus
+                    outline: none
+                &:hover
+                    @media (min-width: 1199px)
+                        left: -38px
+            &-next
+                border: none
+                background-color: transparent
+                position: absolute
+                top: 50%
+                right: -35px
+                transform: translateY(-50%)
+                @media (max-width: 400px)
+                    right: -32px
+                @media (max-width: 340px)
+                    right: -22px
+                @media (min-width: 1199px)
+                    transition: 0.3s
+                &:focus
+                    outline: none
+                &:hover
+                    @media (min-width: 1199px)
+                        right: -38px
